@@ -59,7 +59,7 @@
         <div class="container">
             <img src="https://assets.stickpng.com/images/580b57fbd9996e24bc43c0fc.png" width="100" 
             height="100" alt="Rick rolled">
-            <a href="secret">
+            <a href="clicker/secret">
                 <button class=buttton></button>
             </a>
         </div>
