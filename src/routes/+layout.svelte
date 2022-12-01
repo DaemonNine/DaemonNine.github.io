@@ -4,8 +4,8 @@
   <a href="/memory">Memory</a>
 
   <a
-    target="_blank"
-    href="https://github.com/williamviktorsson/williamviktorsson.github.io"
+    target="_blank"rel="noreferrer"
+    href="https://github.com/DaemonNine/DaemonNine.github.io"
     >GitHub</a
   >
 </nav>
