@@ -4,7 +4,7 @@
     let tasks = [];
     function appendTask(){
         if (newTask === ''){
-        alert("Du måste skriva något");
+        alert("You have to type something");
     } else{
         tasks.push({task:newTask,done: false});
         tasks = tasks;
@@ -22,10 +22,13 @@ ul li:hover {
 }
 
 .done{
-    background-color: aquamarine ;
+    text-decoration: line-through;
+}
+.removeButton{
+    background-color: rgb(251, 146, 146);
 }
 .button{
-    background-color: red;
+background-color: rgb(132, 255, 132);
 }
 </style>
 
@@ -44,7 +47,16 @@ ul li:hover {
 			{i + 1}: {task.task}
             <button class='button' on:click={()=>{
                 task.done = !task.done;
-                tasks = tasks;}}>x</button>
+                tasks = tasks;}}>Finished task ✓</button>
+                <button class='removeButton' on:click={()=>{
+                    if(task.done){
+                        tasks.splice(i,1);
+                        tasks = tasks;
+                    } else{
+                        alert("You haven't finished the task!");
+                    }}}> Remove
+                </button>
+                    
                 
 		</li>
 	{/each}
