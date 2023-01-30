@@ -1,22 +1,31 @@
 <script>
   let cards = [];
-  for (let index = 0; index < 4; index++) {
+  let pairs = 4;
+  for (let index = 0; index < pairs; index++) {
     cards.push({
-      id: 5, // TODO: unique ids per card card
-      img: "/notrick.gif", // TODO: unique images per card card
-      flipped: true,  // TODO: think
+      id: index, // TODO: unique ids per card card
+      img: "https://picsum.photos/id/"+index.toString() +"/200/300", // TODO: unique images per card card
+      flipped: false,  // TODO: think
       completed: false,
     });
+    cards.push({
+      id: index+pairs, // TODO: unique ids per card card
+      img: "https://picsum.photos/id/"+index.toString() +"/200/300", // TODO: unique images per card card
+      flipped: false,  // TODO: think
+      completed: false,
+    });
+     // Nu har den skapat 6 kort med olika bilder
   }
   let flipcount = 0;
   function flip(card) {
     // flip card over if two cards are not already flipped
     // TODO: and card is already not flipped
-    if (card.flipped && flipcount < 2) {
+    if (!card.flipped && flipcount < 2 ) {
       // TODO: Probably do what?
-
+      flipcount+=1;
+      card.flipped = true;
       // flip the cards over after 2s from seeing both cards
-      if (flipcount == 4) {
+      if (flipcount == 2) {
         setTimeout(() => {
           // flip over cards that have not been marked as "completed"
           cards.forEach((card) => {

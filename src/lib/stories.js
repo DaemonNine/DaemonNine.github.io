@@ -1,5 +1,5 @@
 export let stories = [
-     {id:"1",message: "The greatest story ever.", img:"wave.jpeg",choices:[{id:"2",text:"Begin"}]},
+     {id:"1",message: "The story begins with Ewol and Rosa, Ewol invites Rosa home while he is with one of his best friends Otis. Otis and YOU (daddy) are in the basement smoking ZAZA. Your son Ewol is alone with Rosa inside of his room and he loses all senses of rationality and sexually assaults her. Otis walks up to Ewol’s room to witness what had occurred. The next day at school everyone is looking at your son weird. He is called to the principal’s office and you have to speak as a witness. ", img:"theZA.jpg",choices:[{id:"2",text:"Begin"}]},
     {id:"2",message: "What will be your path?", img:"choice.jpeg",choices:[{id:"3",text:"Left"},{id:"4",text:"Right"}]},
      {id:"3",message: "Wrong! Try again!", img:"choice.jpeg",choices:[{id:"4",text:"Other right"},{id:"4",text:"Right"}]},
-     {id:"4",message: "🤣🤣🤣🤣🤣", html: '<div style="width:480px"><iframe allow="fullscreen" frameBorder="0" height="360" src="https://giphy.com/embed/uhYPkjP03h9RvVdazZ/video" width="480"></iframe></div>',choices:[{id:"1",text:"Reset!"}]} ]
+     {id:"4",message: "🤣🤣🤣🤣🤣", html: '<div style="width:480px"><iframe allow="fullscreen" frameBorder="0" height="360" src="https://giphy.com/embed/uhYPkjP03h9RvVdazZ/video" width="480"></iframe></div>',choices:[{id:"1",text:"Reset!"}]}, ]

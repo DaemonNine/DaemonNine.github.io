@@ -48,6 +48,7 @@ background-color: rgb(132, 255, 132);
             <button class='button' on:click={()=>{
                 task.done = !task.done;
                 tasks = tasks;}}>Finished task ✓</button>
+                
                 <button class='removeButton' on:click={()=>{
                     if(task.done){
                         tasks.splice(i,1);
