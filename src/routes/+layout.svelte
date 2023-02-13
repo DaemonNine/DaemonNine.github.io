@@ -4,6 +4,7 @@
   <a href="/memory">Memory</a>
   <a href="/clicker">clicker</a>
   <a href="/TodoApp">TodoApp</a>
+  <a href="/ChatBot">ChatBot</a>
 
   <a
     target="_blank"rel="noreferrer"

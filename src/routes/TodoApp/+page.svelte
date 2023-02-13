@@ -36,6 +36,7 @@ background-color: rgb(132, 255, 132);
 <main>
 
 <h2>Todo's</h2>
+<title>TodoApp</title>
 <input bind:value={newTask}>
 
 <button on:click={appendTask}>

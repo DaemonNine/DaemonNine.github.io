@@ -17,6 +17,7 @@
 
 <main>
   <div class="grid">
+    <title>Telltale</title>
     <!-- https://svelte.dev/tutorial/key-blocks -->
     {#key story_id}
       <!-- https://svelte.dev/tutorial/in-and-out -->
@@ -95,10 +96,6 @@
     overflow-x: hidden;
   }
 
-  .edith{
-    color: aquamarine;
-
-  }
-
+  
 
 </style>

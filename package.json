@@ -16,6 +16,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@picocss/pico": "^1.5.7",
+		"elizabot": "^0.0.3",
 		"svelte-french-toast": "^1.0.3"
 	}
 }

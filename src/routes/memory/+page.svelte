@@ -100,6 +100,7 @@
 </script>
 
 <main>
+  <title>Memory</title>
   <div class="row">
     {#each cards as card, i}
       <div
