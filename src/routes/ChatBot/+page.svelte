@@ -2,45 +2,48 @@
   import { enhance } from "$app/forms";
   import "elizabot";
   import ElizaBot from "elizabot";
+  import { writable } from "svelte/store";
 
   let eliza = new ElizaBot();
 
-  let chat = [{ user: "eliza", text: eliza.getInitial() }];
+  const chatStore = writable(getChat());
+
+  function getChat() {
+    let chat = JSON.parse(localStorage.getItem("chat"));
+    return chat ? chat : [{ user: "eliza", text: eliza.getInitial() }];
+  }
 
   async function write(message) {
-    // TODO: yeet in the new message
-    chat=[...chat,{user: 'you',text: message}]
-    
+    // add the new message to the chat
+    chatStore.update((chat) => {
+      return [...chat, { user: 'you', text: message }];
+    });
+
     // random delay for writing
     await new Promise((r) => setTimeout(r, 1000 + Math.random() * 1000));
 
-    // TODO: write the text
-    chat=[...chat,{user: 'eliza',text: eliza.transform(message)}] 
+    // add Eliza's response to the chat
+    chatStore.update((chat) => {
+      return [...chat, { user: 'eliza', text: eliza.transform(message) }];
+    });
+
+    // save the updated chat to localStorage
+    localStorage.setItem("chat", JSON.stringify($chatStore));
   }
+ 
 </script>
 
 
-<svelte:head>
-  <link rel="stylesheet" href="/pico.min.css" />
-  <style>
-    nav {
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-  </style>
-</svelte:head>
 
-<div class="container">
+
+
+<div data-theme="dark" class="container">
   <h1>Prata med Eliza</h1>
   <div class="scrollable">
-    <!-- TODO: loop over the messages and display them -->
-    {#each chat as  task, i}
-
-    <article>
-      <span>
-        {chat[i].text}
-      </span>
-    </article>
+    {#each $chatStore as message}
+      <article>
+        <span>{message.text}</span>
+      </article>
     {/each}
   </div>
   <form
@@ -50,8 +53,7 @@
       cancel(); //don't post anything to server
       const text = data.get("text");
       write(text);
-
-      // TODO: reset the form using form.reset()
+      form.reset();
     }}
   >
     <input type="text" name="text" />

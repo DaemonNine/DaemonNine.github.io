@@ -3,7 +3,7 @@
   import { onMount } from "svelte";
 
   let cards = [];
-  let pairs = 4; // Varibel för hur många par det finns.
+  let pairs = 10; // Varibel för hur många par det finns.
   for (let index = 0; index < pairs; index++) {
     cards.push({
       id: index, // TODO: unique ids per card card
@@ -132,8 +132,8 @@
   .row {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
   }
 
   .card {

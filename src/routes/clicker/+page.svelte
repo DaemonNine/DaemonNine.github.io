@@ -1,5 +1,5 @@
 <script>
-	var count = 0;
+	let count = 0;
 	let bakerCount = 0;
 	let factoryCount = 0;
     function handleClick() {
@@ -10,7 +10,7 @@
     function bakerHandler(){
         if (count >=5){
             bakerCount += 1;
-            count-=5
+            count-=5;
         }
     }
     function factoryHandler(){
@@ -35,35 +35,20 @@
 
 </script>
 
-<style>
-:global(body) {background-color: lavender;}
-.buttton {
-    cursor: pointer;
-    border: 0px solid #3498db;
-    background-color: transparent;
-    height: 100px;
-    width: 90px;
-    margin-left: -95px;
-    color: #3498db;
-    font-size: 1.5em;
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.6);
-    border-radius: 50%;
-}
-</style>
+
 <head>
     <title>Clicker!</title>
 </head>
 
+
+
 <main>
+    
     <p>Get free cookies!</p>
-        <div class="container">
-            
-            
-            
-        </div>
+        
         
     <br>
-        <button on:click={handleClick}>
+        <button type="button" on:click={()=>handleClick()}>
     Cookies: {count}
     </button>
     <form action="/action_page.php">
@@ -83,6 +68,7 @@
     </button>
     Factories = {factoryCount}
 </main>
+
 
 
 

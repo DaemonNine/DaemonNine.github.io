@@ -1,4 +1,4 @@
-<script></script>
+
 
 <head>
     <title>Secret</title>

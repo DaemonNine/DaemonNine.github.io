@@ -1,0 +1,26 @@
+---
+title: EgenPost
+date: "2023-04-17"
+---
+
+Hej!!
+
+<p>Lorem ipsus</p>
+
+```svelte
+---
+title: EgenPost
+date: "2023-04-17"
+---
+
+Hej!!
+<script>
+    
+</script>
+
+<p>Lorem ipsus</p>
+
+    ```svelte
+        .........
+    ```
+```

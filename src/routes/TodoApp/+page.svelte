@@ -28,20 +28,42 @@ ul li:hover {
     background-color: rgb(251, 146, 146);
 }
 .button{
-background-color: rgb(132, 255, 132);
+    background-color: rgb(132, 255, 132);
+    padding: 10px;
+
+}
+.concatenateButton{
+    margin: 0px;
+    width: 40px;
+    height: 30px;
+    float: right;
+
+}
+.input{
+    float: left;
+    height: 30px;
+
 }
 </style>
 
 
 <main>
 
-<h2>Todo's</h2>
-<title>TodoApp</title>
-<input bind:value={newTask}>
 
-<button on:click={appendTask}>
+
+
+    
+<h2>Todo's</h2>
+<br>
+<title>TodoApp</title>
+
+<div style='float: left;'>
+    <input class=input bind:value={newTask}>
+
+<button class = concatenateButton on:click={appendTask}>
 +
 </button>
+</div>
 <ul>
 	{#each tasks as  task, i}
 		<li class={task.done?  `done` : undefined}>
