@@ -4,27 +4,23 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="../favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout-08d5bdb5.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/_layout-5c045b07.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-bdf17497.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-f5745ca0.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-5444db74.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-6e66ea58.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/control-f5b05b5f.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/parse-d12b0d5b.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-6b5038b4.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_layout.svelte-5b4590ce.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_path_/_page.svelte-301789c8.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_path_/_page.js-dbf0d7ef.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-eb45cbcf.js"><!-- HEAD_svelte-1sn41fh_START --><link rel="stylesheet" href="/pico.min.css"><link rel="stylesheet" href="/css/custom.css"><script src="/js/minimal-theme-switcher.js"></script><script src="/js/modal.js"></script><!-- HEAD_svelte-1sn41fh_END --><!-- HEAD_svelte-1lc4dl3_START --><link rel="stylesheet" href="/pico.min.css"><style>nav {
+		
+		<link href="../_app/immutable/assets/0.6f626641.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.5adb1a15.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.ced777c7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.fc754821.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.98488f90.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control.f5b05b5f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/parse.bee59afc.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.c1199897.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.36b485da.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/2.ec8b9d83.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/7.b10ce250.js"><!-- HEAD_svelte-16e25e2_START --><script src="/js/minimal-theme-switcher.js"></script><script src="/js/modal.js"></script><!-- HEAD_svelte-16e25e2_END --><!-- HEAD_svelte-xmg613_START --><style>nav {
       margin-left: 10%;
       margin-right: 10%;
     }
-  </style><!-- HEAD_svelte-1lc4dl3_END -->
+  </style><!-- HEAD_svelte-xmg613_END -->
 	</head>
 	<body>
 		<div style="display: contents">
@@ -53,40 +49,34 @@
 
 <article><h1>EgenPost</h1>
   <p>Published: 2023-04-17</p>
-  <p>Hej!!</p>
-<p>Lorem ipsus</p>
-<pre class="language-svelte"><!-- HTML_TAG_START --><code class="language-svelte">---
-title: EgenPost
-date: "2023-04-17"
----
-
-Hej!!
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
-    
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Lorem ipsus<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-
-    &#96;&#96;&#96;svelte
-        .........
-    &#96;&#96;&#96;</code><!-- HTML_TAG_END --></pre></article></main>
+  <p>Hej!!</p></article></main>
 
 
-		<script type="module" data-sveltekit-hydrate="bi4tev">
-			import { start } from "../_app/immutable/start-bdf17497.js";
+			
+			<script>
+				{
+					__sveltekit_1i71nku = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
 
-			start({
-				env: {},
-				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="bi4tev"]').parentNode,
-				version: "1681997134317",
-				hydrate: {
-					node_ids: [0, 2, 7],
-					data: [null,null,null],
-					form: null
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.5adb1a15.js"),
+						import("../_app/immutable/entry/app.c1199897.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 7],
+							data,
+							form: null,
+							error: null
+						});
+					});
 				}
-			});
-		</script>
-	</div>
+			</script>
+		</div>
 	</body>
 </html>

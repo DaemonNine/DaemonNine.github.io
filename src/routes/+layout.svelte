@@ -3,11 +3,9 @@
 <svelte:head>
   
 
-  <!-- Pico.css -->
-  <link rel="stylesheet" href="/pico.min.css">
 
-  <!-- Custom template-->
- <link rel="stylesheet" href="/css/custom.css">
+
+
 
   <!-- Minimal theme switcher -->
   <script src="/js/minimal-theme-switcher.js"></script>
@@ -31,9 +29,7 @@
   <a href="/blog">Blog</a>
 </nav>
 
-<script>
-  import "../app.css";
-</script> 
+ 
 
 <style>
   nav{

@@ -6,8 +6,6 @@ import remarkAbbr from 'remark-abbr';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
-import { vitePreprocess } from '@sveltejs/kit/vite';
-
 
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -26,8 +24,6 @@ const config = {
 			assets: 'docs',
 		})
 	},
-	
-	
 
 	vitePlugin: {
 		experimental: {
@@ -46,7 +42,7 @@ const config = {
 			remarkGithub,
 			{
 				// Use your own repository
-				repository: 'https://github.com/DaemonNine/DaemonNine.github.io'
+				repository: 'https://github.com/williamviktorsson/williamviktorsson.github.io.git'
 			}
 		],
 		remarkAbbr
@@ -64,5 +60,4 @@ const config = {
 };
 
 export default config;
-
 
