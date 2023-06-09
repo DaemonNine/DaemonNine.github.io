@@ -15,7 +15,8 @@
 		<link rel="modulepreload" href="./_app/immutable/entry/app.8ac570ab.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.41c905a7.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.319dfa7c.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/5.721f5130.js"><!-- HEAD_svelte-16e25e2_START --><script src="/js/minimal-theme-switcher.js"></script><script src="/js/modal.js"></script><!-- HEAD_svelte-16e25e2_END -->
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.ff32cbb1.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/14.46f9091c.js"><!-- HEAD_svelte-16e25e2_START --><script src="/js/minimal-theme-switcher.js"></script><script src="/js/modal.js"></script><!-- HEAD_svelte-16e25e2_END -->
 	</head>
 	<body>
 		<div style="display: contents">
@@ -36,7 +37,10 @@
 
 
 
-<h1>Här finns sidorna jag skapat</h1>
+<main class="container">
+<div class="chat"><h1>Press any of the following categories to display their items</h1>
+    <hr>
+    <ul><li><a href="/search/users">Users</a></li><li><a href="/search/addresses">Address</a></li><li><a href="/search/banks">Banks</a></li><li><a href="/search/appliances">Appliances</a></li><li><a href="/search/beers">Beers</a></li><li><a href="/search/blood_types">Blood Types</a></li><li><a href="/search/credit_cards">Credit Cards</a></li></ul></div></main>
 
 
 			
@@ -49,14 +53,14 @@
 
 					const element = document.currentScript.parentElement;
 
-					const data = [null,null];
+					const data = [null,null,null];
 
 					Promise.all([
 						import("./_app/immutable/entry/start.ff3d4bcc.js"),
 						import("./_app/immutable/entry/app.8ac570ab.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 5],
+							node_ids: [0, 3, 14],
 							data,
 							form: null,
 							error: null

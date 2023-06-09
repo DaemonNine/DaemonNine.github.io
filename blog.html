@@ -15,7 +15,12 @@
 		<link rel="modulepreload" href="./_app/immutable/entry/app.8ac570ab.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.41c905a7.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.319dfa7c.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/5.721f5130.js"><!-- HEAD_svelte-16e25e2_START --><script src="/js/minimal-theme-switcher.js"></script><script src="/js/modal.js"></script><!-- HEAD_svelte-16e25e2_END -->
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.91d3a4bd.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/9.d53d003d.js"><!-- HEAD_svelte-16e25e2_START --><script src="/js/minimal-theme-switcher.js"></script><script src="/js/modal.js"></script><!-- HEAD_svelte-16e25e2_END --><!-- HEAD_svelte-xmg613_START --><style>nav {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  </style><!-- HEAD_svelte-xmg613_END -->
 	</head>
 	<body>
 		<div style="display: contents">
@@ -36,10 +41,20 @@
 
 
 
-<h1>Här finns sidorna jag skapat</h1>
 
 
-			
+
+<main class="container"><h1>Blog</h1>
+
+
+
+<ul><li><h2><a href="/blog/EgenPost">EgenPost
+        </a></h2>
+      Published 2023-04-17
+    </li></ul></main>
+
+
+			<script type="application/json" data-sveltekit-fetched data-url="/api/posts">{"status":200,"statusText":"","headers":{},"body":"[{\"meta\":{\"title\":\"EgenPost\",\"date\":\"2023-04-17\"},\"path\":\"EgenPost\"}]"}</script>
 			<script>
 				{
 					__sveltekit_171dhir = {
@@ -49,14 +64,14 @@
 
 					const element = document.currentScript.parentElement;
 
-					const data = [null,null];
+					const data = [null,null,null];
 
 					Promise.all([
 						import("./_app/immutable/entry/start.ff3d4bcc.js"),
 						import("./_app/immutable/entry/app.8ac570ab.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 5],
+							node_ids: [0, 2, 9],
 							data,
 							form: null,
 							error: null

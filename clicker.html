@@ -4,25 +4,86 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="./_app/immutable/start-714875b1.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-3301377a.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-dae998c0.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-22b79fa9.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/parse-c28c2630.js">
+		
+		<link href="./_app/immutable/assets/0.6f626641.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.ff3d4bcc.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.036febc4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.988598fb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.95c44580.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/control.f5b05b5f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/parse.bee59afc.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.8ac570ab.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.319dfa7c.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/11.0cbc2a7b.js"><!-- HEAD_svelte-16e25e2_START --><script src="/js/minimal-theme-switcher.js"></script><script src="/js/modal.js"></script><!-- HEAD_svelte-16e25e2_END -->
 	</head>
 	<body>
 		<div style="display: contents">
-		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "./_app/immutable/start-714875b1.js";
 
-			start({
-				env: {},
-				hydrate: null,
-				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-				version: "1676284168161"
-			});
-		</script></div>
+
+
+
+<nav class="svelte-hkstmz"><a href="/">Hem</a>
+  <a href="/telltale">Telltale</a>
+  <a href="/memory">Memory</a>
+  <a href="/clicker">clicker</a>
+  <a href="/TodoApp">TodoApp</a>
+  <a href="/ChatBot">ChatBot</a>
+  <a href="/search">Search</a>
+  <a href="/blog">Blog</a></nav>
+
+ 
+
+
+
+<head><title>Clicker!</title></head>
+
+
+
+<main><p>Get free cookies!</p>
+        
+        
+    <br>
+        <button type="button">Cookies: 0</button>
+    <form action="/action_page.php"><label for="fname">Set cookie amount:</label>
+        <input type="text" id="fname" name="fname"></form>
+    <br>
+    <br>
+    <button>Purchase Baker
+    </button>
+    Bakers = 0
+    <br>
+    <br>
+    <button>Purchase Factory
+    </button>
+    Factories = 0</main>
+
+
+			
+			<script>
+				{
+					__sveltekit_171dhir = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.ff3d4bcc.js"),
+						import("./_app/immutable/entry/app.8ac570ab.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 11],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
 	</body>
 </html>
